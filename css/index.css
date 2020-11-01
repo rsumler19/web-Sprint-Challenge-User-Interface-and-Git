@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/*border: 0;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,7 +49,30 @@ table {
 
 * {
     box-sizing: border-box;
+    
 }
+
+/*nav styles*/
+nav {
+    display:flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+    align-items:center;
+}    
+
+nav a{
+    margin: auto;
+    text-decoration: none;
+    color:black;
+} 
+
+
+nav .logo {
+    padding-bottom:22px;
+}
+
+}
+/*content styles*/
 
 html, body {
     height: 100%;
@@ -81,7 +104,7 @@ p {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
+    padding: 20px 1% 20px 0;
     padding-bottom: 20px;  
 }
 
@@ -126,6 +149,7 @@ p {
     padding-right: 0;
 }
 
+/* footer styles*/
 footer {
     width: 100%;
     background: black;
@@ -143,4 +167,35 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*about page styles*/
+.container-about-page {
+    margin: 0 10% 0 10%;
+    align-content: center;
+}
+.container-about-page .about {
+    margin-bottom: 10px ;
+    border-bottom:1px dashed black;
+    padding-bottom: 15px;
+}
+.container-about-page h2 {
+    padding-top: 15px;
+}
+
+.topsection {
+    display: flex;
+}
+
+.bottomsection {
+    display: flex;
+}
+
+.box {
+    border-bottom: 1px dashed black;
+    margin: 20px 3% 0 0;
+}
+
+.box button{
+    margin: 15px;
 }
